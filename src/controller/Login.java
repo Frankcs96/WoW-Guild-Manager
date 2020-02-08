@@ -1,6 +1,8 @@
 package controller;
 
+import db.DataBase;
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -23,7 +25,12 @@ public class Login extends HttpServlet {
         + "</div>";
     String userName = request.getParameter("username");
     String password = request.getParameter("password");
-    User user = new User(userName,password);
+    User user = null;
+    try {
+      user = new User(userName, DataBase.encryptPassword(password));
+    } catch (NoSuchAlgorithmException e) {
+      e.printStackTrace();
+    }
     UserDao userDao = new UserDao();
 
     try {

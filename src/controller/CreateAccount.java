@@ -1,6 +1,7 @@
 package controller;
 
 import java.io.IOException;
+import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,26 +28,26 @@ public class CreateAccount extends HttpServlet {
           + "</div>";
       request.setAttribute("error", error);
       request.getRequestDispatcher("createaccount.jsp").forward(request,response);
-    }
-
-    try {
-      if (userDao.isUserInDB(userName)) {
-        error = "<div class=\"alert alert-danger\" role=\"alert\">\n"
-            + "User already exists try with another one.\n"
-            + "</div>";
-        request.setAttribute("error", error);
-        request.getRequestDispatcher("createaccount.jsp").forward(request,response);
-      } else {
-        userDao.addUser(userName,password);
-        response.sendRedirect("login.jsp");
+    } else {
+      try {
+        if (userDao.isUserInDB(userName)) {
+          error = "<div class=\"alert alert-danger\" role=\"alert\">\n"
+              + "User already exists try with another one.\n"
+              + "</div>";
+          request.setAttribute("error", error);
+          request.getRequestDispatcher("createaccount.jsp").forward(request,response);
+        } else {
+          userDao.addUser(userName,password);
+          response.sendRedirect("login.jsp");
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+      } catch (NoSuchAlgorithmException e) {
+        e.printStackTrace();
       }
-    } catch (SQLException e) {
-      e.printStackTrace();
-    } catch (ClassNotFoundException e) {
-      e.printStackTrace();
     }
-
-
 
 
   }
