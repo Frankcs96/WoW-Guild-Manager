@@ -27,7 +27,7 @@ public class CreateAccount extends HttpServlet {
           + "Passwords do not match\n"
           + "</div>";
       request.setAttribute("error", error);
-      request.getRequestDispatcher("createaccount.jsp").forward(request,response);
+      request.getRequestDispatcher("createaccount.jsp").forward(request, response);
     } else {
       try {
         if (userDao.isUserInDB(userName)) {
@@ -35,9 +35,9 @@ public class CreateAccount extends HttpServlet {
               + "User already exists try with another one.\n"
               + "</div>";
           request.setAttribute("error", error);
-          request.getRequestDispatcher("createaccount.jsp").forward(request,response);
+          request.getRequestDispatcher("createaccount.jsp").forward(request, response);
         } else {
-          userDao.addUser(userName,password);
+          userDao.addUser(userName, password);
           response.sendRedirect("login.jsp");
         }
       } catch (SQLException e) {
@@ -50,11 +50,13 @@ public class CreateAccount extends HttpServlet {
     }
 
 
+
+
   }
 
   protected void doGet(HttpServletRequest request,
       HttpServletResponse response)
       throws ServletException, IOException {
-
+    response.sendRedirect("createaccount.jsp");
   }
 }

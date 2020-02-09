@@ -36,12 +36,12 @@ public class Login extends HttpServlet {
     try {
       if (userDao.getAllUsers().contains(user)) {
         HttpSession session = request.getSession(true);
-        session.setAttribute("userName",userName);
+        session.setAttribute("userName", userName);
         response.sendRedirect("index.jsp");
 
       } else {
         request.setAttribute("error", error);
-        request.getRequestDispatcher("login.jsp").forward(request,response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
       }
     } catch (SQLException e) {
       e.printStackTrace();
@@ -56,5 +56,6 @@ public class Login extends HttpServlet {
       HttpServletResponse response)
       throws ServletException, IOException {
 
+    response.sendRedirect("login.jsp");
   }
 }
