@@ -1,0 +1,38 @@
+body {
+  font-family: Semplicita Pro, Open Sans, Arial, Helvetica, sans-serif;
+  color: #f8b700 !important;
+  background-image:
+      linear-gradient(to bottom, rgba(36, 23, 17, 0.70), rgba(26, 15, 11, 0.90)),
+      url('../img/indexBG.jpg');
+  background-size: cover;
+}
+
+#guildOptions {
+  margin-top: 200px;
+}
+#allianceLogo {
+  width: 350px;
+  height: 340px;
+}
+
+.card-body {
+  margin-top: 10px;
+
+}
+
+.btn-login {
+  color: #f8b700;
+  background-color: rgba(159,22,0,.6);
+  border-color: red;
+
+}
+
+.btn-login:hover {
+  background-color: red;
+  color: #261812;
+}
+
+#logout {
+  width: 350px;
+  height: 340px;
+}
