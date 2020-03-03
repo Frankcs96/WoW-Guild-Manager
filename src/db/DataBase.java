@@ -12,7 +12,7 @@ public class DataBase {
   public Connection getConnection () throws SQLException, ClassNotFoundException {
     Class.forName("com.mysql.jdbc.Driver");
     Connection connection = DriverManager
-        .getConnection("jdbc:mysql://localhost:3306/crud_db","root", "1234");
+        .getConnection("jdbc:mysql://localhost:3306/wow_guild_manager","root", "1234");
 
     return connection;
 

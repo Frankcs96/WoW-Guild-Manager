@@ -21,6 +21,15 @@ tambien tiene la FK del servidor al que pertenece.
 Esta tabla contiene la información de todos los miembros que pertenecen a una guild.
 La aplicacion nos permitira dar de alta, modificar y borrar jugadores de nuestra guild.
 
+## Login
+
+![](screenshots/login.jpg)
+
+Para acceder a la aplicación necesitaremos estas registrados. Si intentamos acceder al index sin estar logeados nos mandara a la pagina de login.
+
+![](screenshots/create.jpg)
+
+Para la creación de una cuenta la aplicación tendra en cuenta que los dos campos de contraseña sean iguales y en el caso de que esto ocurra buscara si existe ya un usuario con ese nombre.
 
 
 
