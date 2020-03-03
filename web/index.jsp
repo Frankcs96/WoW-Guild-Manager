@@ -25,15 +25,16 @@
 <div class="container text-center mt-4">
     <h1>Welcome ${userName}</h1>
 </div>
-
+<% if ((boolean) request.getSession(true).getAttribute("hasGuild")) { %>
 <div class="container" id="guildOptions">
     <div class="row">
         <div class="col-6 text-center">
-                <img class="card-img-top" src="img/allianceLogo.png" alt="Card image cap" id="allianceLogo">
-                <div class="card-body">
-                    <h4 class="card-title">Create your guild!</h4>
-                    <p class="card-text">First things first, create a guild to start using this app</p>
-                    <a href="#" class="btn btn-login">Create</a>
+            <img class="card-img-top" src="img/allianceLogo.png" alt="Card image cap"
+                 id="allianceLogo">
+            <div class="card-body">
+                <h4 class="card-title">Create your guild!</h4>
+                <p class="card-text">First things first, create a guild to start using this app</p>
+                <a href="#" class="btn btn-login">Create</a>
 
             </div>
 
@@ -45,9 +46,14 @@
                 <h4 class="card-title">Change account</h4>
                 <p class="card-text">Take a break... leading a guild is painfull</p>
                 <a href="Logout" class="btn btn-login">Log out</a>
+            </div>
         </div>
     </div>
-</div>
+        <% } else { %>
+
+    <h1>no tiene guild</h1>
+
+        <% } %>
 
 
 </body>
