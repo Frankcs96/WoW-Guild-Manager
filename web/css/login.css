@@ -5,22 +5,22 @@ body {
   background-size: cover;
   background-image: url("../img/loginbg.jpg");
   height: 100vh;
+  color: #f8b700;
+
 
 
 }
 #login {
-  font-family: 'MedievalSharp', cursive !important;
+font-family: Semplicita Pro, Open Sans, Arial, Helvetica, sans-serif
 }
 
-form {
-  font-family: 'MedievalSharp', cursive;
-}
 #login .container #login-row #login-column #login-box {
   margin-top: 120px;
   max-width: 600px;
   height: 320px;
-  border: 1px solid #9C9C9C;
-  background-color: #EAEAEA;
+  border: 1px solid #000000;
+  background-color: #261812;
+  color: #f8b700;
 
 }
 #login .container #login-row #login-column #login-box #login-form {
@@ -28,4 +28,18 @@ form {
 }
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
+}
+
+a {
+  color: #f8b700;
+}
+.btn-login {
+  color: #f8b700;
+  background-color: rgba(159,22,0,.6);
+  border-color: red;
+
+}
+
+.btn-login:hover {
+  background-color: red
 }

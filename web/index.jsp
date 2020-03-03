@@ -7,12 +7,12 @@
 %>
 <html>
   <head>
-    <title></title>
+    <title>WoW Guild Manager</title>
   </head>
   <body>
 
 
-<h1>bienvenido</h1>
+<h1>Welcome <%= session.getAttribute("userName")%></h1>
 
 
   </body>
