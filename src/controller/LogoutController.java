@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 @WebServlet(urlPatterns = "/Logout")
-public class Logout extends HttpServlet {
+public class LogoutController extends HttpServlet {
 
   protected void doPost(HttpServletRequest request,
       HttpServletResponse response)
@@ -23,6 +23,6 @@ public class Logout extends HttpServlet {
 
     HttpSession session=request.getSession();
     session.invalidate();
-    response.sendRedirect("login.jsp");
+    response.sendRedirect("Login");
   }
 }

@@ -15,7 +15,7 @@ import model.dao.GuildDao;
 import model.dao.UserDao;
 
 @WebServlet(urlPatterns = "/Login")
-public class Login extends HttpServlet {
+public class LoginController extends HttpServlet {
 
   protected void doPost(HttpServletRequest request,
       HttpServletResponse response)
@@ -33,14 +33,13 @@ public class Login extends HttpServlet {
       e.printStackTrace();
     }
     UserDao userDao = new UserDao();
-    GuildDao guildDao = new GuildDao();
 
     try {
       if (userDao.getAllUsers().contains(user)) {
         HttpSession session = request.getSession(true);
         session.setAttribute("userName", userName);
-        session.setAttribute("hasGuild", guildDao.userHasGuild(userDao.getUserIdByName(userName)));
-        response.sendRedirect("index.jsp");
+        session.setAttribute("userId" , userDao.getUserIdByName(userName));
+        response.sendRedirect("index");
 
 
       } else {
@@ -59,8 +58,8 @@ public class Login extends HttpServlet {
   protected void doGet(HttpServletRequest request,
       HttpServletResponse response)
       throws ServletException, IOException {
+    request.getRequestDispatcher("login.jsp").forward(request, response);
 
-    response.sendRedirect("login.jsp");
 
   }
 }

@@ -10,4 +10,8 @@
     <location>/404.jsp</location>
   </error-page>
 
+  <welcome-file-list>
+    <welcome-file>index</welcome-file>
+  </welcome-file-list>
+
 </web-app>

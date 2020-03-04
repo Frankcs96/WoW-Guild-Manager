@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.dao.UserDao;
 
 @WebServlet(urlPatterns = "/CreateAccount")
-public class CreateAccount extends HttpServlet {
+public class CreateAccountController extends HttpServlet {
 
   protected void doPost(HttpServletRequest request,
       HttpServletResponse response)
@@ -57,6 +57,6 @@ public class CreateAccount extends HttpServlet {
   protected void doGet(HttpServletRequest request,
       HttpServletResponse response)
       throws ServletException, IOException {
-    response.sendRedirect("createaccount.jsp");
+    request.getRequestDispatcher("createaccount.jsp").forward(request, response);
   }
 }

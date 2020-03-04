@@ -51,7 +51,7 @@
 
                         <div id="register-link" class="text-right">
                             <br>
-                            <a href="createaccount.jsp">Register here</a>
+                            <a href="CreateAccount">Register here</a>
                         </div>
 
 

@@ -56,7 +56,7 @@
 
                         <div id="register-link" class="text-right">
                             <br>
-                            <a href="login.jsp">Log in</a>
+                            <a href="Login">Log in</a>
                         </div>
 
                     </form>
