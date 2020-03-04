@@ -7,8 +7,10 @@ public class Guild {
   private int userId;
   private int serverId;
 
-  public Guild(String guildName, int serverId) {
+  public Guild(int id, String guildName, int userId, int serverId) {
+    this.id = id;
     this.guildName = guildName;
+    this.userId = userId;
     this.serverId = serverId;
   }
 

@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="css/indexStyle.css">
 </head>
 <body>
-<div class="container text-center mt-4">
-    <h1>Welcome ${userName}</h1>
+<div class="container mt-4">
+    <h1 style="display: inline">Logged as: ${userName}</h1>
+    <h1 style="display: inline; margin-left: 280px">Guild: ${guild.guildName} ${server.serverName} ${server.serverRegion}</h1>
+
 </div>
 
 
@@ -34,7 +36,7 @@
             <div class="card-body">
                 <h4 class="card-title">Create your guild!</h4>
                 <p class="card-text">First things first, create a guild to start using this app</p>
-                <a href="#" class="btn btn-login">Create</a>
+                <a href="createguild" class="btn btn-login">Create</a>
 
             </div>
 
@@ -53,47 +55,48 @@
     <div class="row">
 
 
-        <div class="col-6 text-center">
-            <img class="card-img-top" src="img/allianceLogo.png" alt="Card image cap"
-                 id="allianceLogo">
+        <div class="col-3 text-center">
+            <img class="card-img-top " src="img/allianceLogo.png" alt="Card image cap"
+                 id="allianceLogo2">
             <div class="card-body">
-                <h4 class="card-title">Create your guild!</h4>
-                <p class="card-text">First things first, create a guild to start using this app</p>
-                <a href="#" class="btn btn-login">Create</a>
+                <h4 class="card-title">Manage your guild</h4>
+                <p class="card-text">Organize all your guild members as you want!</p>
+                <a href="#" class="btn btn-login">Manage</a>
 
             </div>
 
         </div>
 
-        <div class="col-6 text-center">
-            <img class="card-img-top" src="img/allianceLogo.png" alt="Card image cap"
-                 id="allianceLogo">
+        <div class="col-3 text-center">
+            <img class="card-img-top" src="img/updateGuild.png" alt="Card image cap"
+                 id="updateLogo">
             <div class="card-body">
-                <h4 class="card-title">Create your guild!</h4>
-                <p class="card-text">First things first, create a guild to start using this app</p>
-                <a href="#" class="btn btn-login">Create</a>
+                <h4 class="card-title">Update your guild</h4>
+                <p class="card-text"> change your guild name or your server</p>
+                <a href="#" class="btn btn-login">Update</a>
 
             </div>
 
         </div>
 
-    </div>
-    <div class="row">
 
-        <div class="col-6 text-center">
-            <img class="card-img-top" src="img/allianceLogo.png" alt="Card image cap"
-                 id="allianceLogo">
+
+
+        <div class="col-3 text-center">
+            <img class="card-img-top" src="img/deleteGuild.png" alt="Card image cap"
+                 id="deleteGuild">
             <div class="card-body">
-                <h4 class="card-title">Create your guild!</h4>
-                <p class="card-text">First things first, create a guild to start using this app</p>
-                <a href="#" class="btn btn-login">Create</a>
+                <h4 class="card-title">Delete your guild</h4>
+                <p class="card-text">
+                    Delete your guild and make a new one</p>
+                <a href="#" class="btn btn-login">Delete</a>
 
             </div>
 
         </div>
 
-        <div class="col-6 text-center">
-            <img class="card-img-top" src="img/logout.png" alt="Card image cap" id="logout">
+        <div class="col-3 text-center">
+            <img class="card-img-top" src="img/logout.png" alt="Card image cap" id="logout2">
             <div class="card-body">
                 <h4 class="card-title">Change account</h4>
                 <p class="card-text">Take a break... leading a guild is painfull</p>

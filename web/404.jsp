@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <a href="index.jsp " class="btn btn-primary">Go back home</a>
+                <a href="index" class="btn btn-primary">Go back home</a>
             </div>
         </div>
 
