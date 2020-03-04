@@ -31,12 +31,12 @@ Para acceder a la aplicación necesitaremos estas registrados. Si intentamos acc
 
 Para la creación de una cuenta la aplicación tendra en cuenta que los dos campos de contraseña sean iguales y en el caso de que esto ocurra buscara si existe ya un usuario con ese nombre.
 
-##index
+## index
 El index va a variar según el usuario que logea. En el caso de que no tenga ninguna guild solo tendra la opción de crear una y de hacer log out.
-###index si el usuario no tiene guild:
+### index si el usuario no tiene guild:
 ![](screenshots/index1.png)
 
 En el caso de logear con una cuenta la que ya tenga una guild le dara las opciones de administrar su guild, actualizarla, borrarla o hacer log out.
-###index si el usuario tiene guild
+### index si el usuario tiene guild
 ![](screenshots/index2.png)
 
