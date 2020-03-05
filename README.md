@@ -40,3 +40,12 @@ En el caso de logear con una cuenta la que ya tenga una guild le dara las opcion
 ### index si el usuario tiene guild
 ![](screenshots/index2.png)
 
+## Crear una guild
+
+En el caso de que el usuario no tenga guild podra crear una en la siguiente ventana. Esta ventana tiene un filter que hace que no puedas acceder si no estas logeado o si ya tienes guild, de esta manera no podras crear mas de una guild por usuario.
+
+La lista de servidores se alimenta de los servidores que tenemos en la base de datos.
+
+![](screenshots/createGuild.png)
+
+

@@ -20,7 +20,7 @@
 <body>
 <div class="container mt-4">
     <h1 style="display: inline">Logged as: ${userName}</h1>
-    <h1 style="display: inline; margin-left: 280px">Guild: ${guild.guildName} ${server.serverName} ${server.serverRegion}</h1>
+    <h1 style="display: inline; margin-left: 200px">Guild: ${guild.guildName}</h1>
 
 </div>
 
@@ -36,7 +36,7 @@
             <div class="card-body">
                 <h4 class="card-title">Create your guild!</h4>
                 <p class="card-text">First things first, create a guild to start using this app</p>
-                <a href="createguild" class="btn btn-login">Create</a>
+                <a href="CreateGuild" class="btn btn-login">Create</a>
 
             </div>
 

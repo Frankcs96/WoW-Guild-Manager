@@ -6,9 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import model.Guild;
-import model.User;
+
 
 public class GuildDao {
+
 
   public boolean userHasGuild(int userId) throws SQLException, ClassNotFoundException {
     DataBase db = new DataBase();
@@ -29,9 +30,18 @@ public class GuildDao {
       String guildName = rs.getString("guildName");
       int userId = rs.getInt("userId");
       int serverId = rs.getInt("serverId");
-      guild = new Guild(guildId,guildName,userId,serverId);
+      guild = new Guild(guildId, guildName, userId, serverId);
 
     }
     return guild;
+  }
+
+  public void addGuild(Guild guild) throws SQLException, ClassNotFoundException {
+    DataBase db = new DataBase();
+    Connection con = db.getConnection();
+    Statement st = con.createStatement();
+    st.execute(
+        "INSERT INTO `guild`(guildName,userId,serverId) VALUE ('" + guild.getGuildName() + "','"
+            + guild.getUserId() + "','" + guild.getServerId() + "')");
   }
 }

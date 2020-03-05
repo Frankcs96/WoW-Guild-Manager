@@ -1,6 +1,7 @@
 package filter;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -11,8 +12,9 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import model.dao.GuildDao;
 
-@WebFilter(urlPatterns = "/createguild")
+@WebFilter(urlPatterns = "/CreateGuild")
 public class CreateGuildFilter implements Filter {
 
   public void destroy() {
@@ -24,14 +26,27 @@ public class CreateGuildFilter implements Filter {
 
     HttpServletRequest request = (HttpServletRequest) req;
     HttpServletResponse response = (HttpServletResponse) resp;
+    GuildDao guildDao = new GuildDao();
 
     HttpSession session = request.getSession(false);
     if (session == null || session.getAttribute("userName") == null) {
-      response.sendRedirect(request.getContextPath() + "/Login");
+      response.sendRedirect(request.getContextPath() + "/index");
       return;
     } else {
-      chain.doFilter(request, response);
+      try {
+        if (guildDao.userHasGuild((Integer) session.getAttribute("userId"))) {
+          response.sendRedirect(request.getContextPath() + "/index");
+          return;
+
+        }
+      } catch (SQLException e) {
+        e.printStackTrace();
+      } catch (ClassNotFoundException e) {
+        e.printStackTrace();
+      }
     }
+
+    chain.doFilter(request, response);
 
   }
 

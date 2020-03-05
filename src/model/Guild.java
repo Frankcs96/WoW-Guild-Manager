@@ -14,6 +14,12 @@ public class Guild {
     this.serverId = serverId;
   }
 
+  public Guild(String guildName, int userId, int serverId) {
+    this.guildName = guildName;
+    this.userId = userId;
+    this.serverId = serverId;
+  }
+
   public int getId() {
     return id;
   }
