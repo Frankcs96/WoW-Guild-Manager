@@ -77,7 +77,14 @@ En el apartado de gestionar guild simplemente tendremos una lista con los jugado
 ![](screenshots/manageGuild.png)
 
 ## Dar de alta un jugador
+
 ![](screenshots/createPlayer.png)
+
+## Modificar jugador
+
+Es igual que la de crear solo que los datos del jugador a modificar salen en los campos.
+
+![](screenshots/UpdatePlayer.png)
 
 ## pagina 404
 
