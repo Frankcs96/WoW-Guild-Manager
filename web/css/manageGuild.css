@@ -99,3 +99,39 @@ table.table td .add {
   background-color: red;
   color: #261812;
 }
+
+.Paladin {
+  color: #F58CBA;
+}
+
+.Demon {
+  color:  blueviolet;
+}
+
+.Hunter {
+  color:  #ABD473;
+}
+
+.Warlock {
+  color:  #9482C9;
+}
+
+.Death {
+  color: #C41F3B;
+}
+
+.Druid {
+  color: #FF7D0A
+}
+
+.Monk {
+  color:  #00FF96;
+}
+
+.Priest {
+  color: #FFFFFF;
+}
+
+.Warrior {
+  color: #C79C6E;
+}

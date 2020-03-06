@@ -63,7 +63,7 @@
                 for (Player player : playerList) {
                     out.print("<tr>\n"
                             + "                <td>" + player.getPlayerName() + "</td>\n"
-                            + "                <td>" + player.getPlayerClass() + "</td>\n"
+                            + "                <td class = " + player.getPlayerClass() + ">" + player.getPlayerClass() + "</td>\n"
                             + "                <td>" + player.getPlayerRole() + "</td>\n"
                             + "                <td>" + player.getPlayerLevel() + "</td>\n"
                             + "                <td>" + player.getPlayerItemLevel() + "</td>\n"
@@ -86,3 +86,4 @@
 
 </body>
 </html>
+
