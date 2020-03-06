@@ -70,7 +70,7 @@ Esta vista tiene un filtro para que solo se pueda acceder si ya tienes una guild
 
 ![](screenshots/updateGuild.png)
 
-##Gestionar la guild
+## Gestionar la guild
 
 En el apartado de gestionar guild simplemente tendremos una lista con los jugadores de nuestra guild los cuales podemos dar de alta borrar o modificar.
 
