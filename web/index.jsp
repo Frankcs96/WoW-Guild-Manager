@@ -15,6 +15,7 @@
           id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/alertdelete.js"></script>
     <link rel="stylesheet" href="css/indexStyle.css">
 </head>
 <body>
@@ -89,9 +90,9 @@
                 <h4 class="card-title">Delete your guild</h4>
                 <p class="card-text">
                     Delete your guild and make a new one</p>
-                <a href="#" class="btn btn-login">Delete</a>
-
+                <a onclick="confirmDelete()" href="#" class="btn btn-login">Delete</a>
             </div>
+
 
         </div>
 

@@ -44,4 +44,13 @@ public class GuildDao {
         "INSERT INTO `guild`(guildName,userId,serverId) VALUE ('" + guild.getGuildName() + "','"
             + guild.getUserId() + "','" + guild.getServerId() + "')");
   }
+
+
+  public void deleteGuildByUserId (int userId) throws SQLException, ClassNotFoundException {
+    DataBase db = new DataBase();
+    Connection con = db.getConnection();
+    Statement st = con.createStatement();
+
+    st.execute("DELETE FROM guild WHERE userId = " + userId);
+  }
 }
