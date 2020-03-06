@@ -62,7 +62,7 @@
             <div class="card-body">
                 <h4 class="card-title">Manage your guild</h4>
                 <p class="card-text">Organize all your guild members as you want!</p>
-                <a href="#" class="btn btn-login">Manage</a>
+                <a href="ManageGuild" class="btn btn-login">Manage</a>
 
             </div>
 

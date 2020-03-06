@@ -1,0 +1,48 @@
+body {
+  font-family: Semplicita Pro, Open Sans, Arial, Helvetica, sans-serif;
+  color: #f8b700 !important;
+  background-image: linear-gradient(to bottom, rgba(36, 23, 17, 0.70), rgba(26, 15, 11, 0.9)),
+  url('../img/indexBG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+}
+
+#login {
+  font-family: Semplicita Pro, Open Sans, Arial, Helvetica, sans-serif
+}
+
+#login .container #login-row #login-column #login-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 700px;
+  border: 1px solid #000000;
+  background-color: #261812;
+  color: #f8b700;
+
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+  margin-top: -85px;
+}
+
+a {
+  color: #f8b700;
+}
+
+.btn-login {
+  color: #f8b700;
+  background-color: rgba(159, 22, 0, .6);
+  border-color: red;
+
+}
+
+.btn-login:hover {
+  background-color: red
+}
+
