@@ -4,6 +4,16 @@
 <h4>Aplicación para la asignatura de programación la cual consistira en un programa de gestion de tu guild (Grupo de jugadores organizados por rangos los cuales se juntan para cumplir objetivos dentro del juego)
 para el juego world of warcraft</h4>
 
+## Patrón de diseño
+He usado el Modelo vista controlador para tenerlo todo organizado y evitar codigo java en las paginas jsp.
+
+Vista: JSP <br>
+Controlador: Servlet/filters <br>
+modelo: base de datos mysql
+
+
+![](screenshots/patron.png)
+
 ## Base de datos
 
 ![](screenshots/db.jpg)
@@ -51,6 +61,7 @@ La lista de servidores se alimenta de los servidores que tenemos en la base de d
 ## Borrar una guild
 
 Cuando pulsemos el boton de borrar una guild saldra una ventana modal de javascript la cual nos dira si estamos seguros ya que perderemos todos los datos de esa guild
+
 ![](screenshots/deleteGuild.png)
 
 ## Modificar una guild
@@ -58,5 +69,20 @@ La ventana es muy parecida a la de crear guild lo unico que por defecto saldran 
 Esta vista tiene un filtro para que solo se pueda acceder si ya tienes una guild.
 
 ![](screenshots/updateGuild.png)
+
+##Gestionar la guild
+
+En el apartado de gestionar guild simplemente tendremos una lista con los jugadores de nuestra guild los cuales podemos dar de alta borrar o modificar.
+
+![](screenshots/manageGuild.png)
+
+## Dar de alta un jugador
+![](screenshots/createPlayer.png)
+
+## pagina 404
+
+Si se accede a una pagina que no existe tendra una pagina de error customizada para que el usuario no vea el error de java.
+
+![](screenshots/404error.png)
 
 
