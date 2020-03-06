@@ -53,4 +53,10 @@ La lista de servidores se alimenta de los servidores que tenemos en la base de d
 Cuando pulsemos el boton de borrar una guild saldra una ventana modal de javascript la cual nos dira si estamos seguros ya que perderemos todos los datos de esa guild
 ![](screenshots/deleteGuild.png)
 
+## Modificar una guild
+La ventana es muy parecida a la de crear guild lo unico que por defecto saldran los valores en los campos tanto el nombre como el servidor.
+Esta vista tiene un filtro para que solo se pueda acceder si ya tienes una guild.
+
+![](screenshots/updateGuild.png)
+
 

@@ -74,7 +74,7 @@
             <div class="card-body">
                 <h4 class="card-title">Update your guild</h4>
                 <p class="card-text"> change your guild name or your server</p>
-                <a href="#" class="btn btn-login">Update</a>
+                <a href="UpdateGuild" class="btn btn-login">Update</a>
 
             </div>
 

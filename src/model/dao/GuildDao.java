@@ -53,4 +53,12 @@ public class GuildDao {
 
     st.execute("DELETE FROM guild WHERE userId = " + userId);
   }
+
+  public void updateGuild (Guild guild) throws SQLException, ClassNotFoundException {
+    DataBase db = new DataBase();
+    Connection con = db.getConnection();
+    Statement st = con.createStatement();
+    st.execute("UPDATE guild SET guildName = '" + guild.getGuildName() + "', serverId = " + guild.getServerId() +  " WHERE userId = " + guild.getUserId());
+
+  }
 }
