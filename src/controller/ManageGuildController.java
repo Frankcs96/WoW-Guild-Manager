@@ -36,7 +36,7 @@ public class ManageGuildController extends HttpServlet {
 
     try {
       Guild guild = guildDao.getUserGuildById((Integer) session.getAttribute("userId"));
-      Server server = serverDao.getServerById((Integer) session.getAttribute("userId"));
+      Server server = serverDao.getServerById(guild.getServerId());
       ArrayList<Player> playerList = (ArrayList<Player>) playerDao
           .getAllPlayers(guild.getId());
 
@@ -44,6 +44,7 @@ public class ManageGuildController extends HttpServlet {
       request.setAttribute("serverName", server.getServerName());
       request.setAttribute("serverRegion", server.getServerRegion());
       request.setAttribute("playerList", playerList);
+      System.out.println(server.getServerName());
 
     } catch (SQLException e) {
       e.printStackTrace();
