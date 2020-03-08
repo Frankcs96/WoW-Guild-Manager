@@ -57,10 +57,10 @@
                                       out.print("<option value=\"Paladin\">Paladin</option>");
                                     }
 
-                                    if (playerClass.equals("Death Knight")) {
-                                        out.print("<option selected=\"selected\" value=\"Death Knight\">Paladin</option>");
+                                    if (playerClass.equals("Death knight")) {
+                                        out.print("<option selected=\"selected\" value=\"Death knight\">Death knight</option>");
                                     } else {
-                                        out.print("<option value=\"Death Knight\">Death Knight</option>");
+                                        out.print("<option value=\"Death knight\">Death knight</option>");
                                     }
 
                                     if (playerClass.equals("Warrior")) {
